@@ -14,7 +14,7 @@ let i = 0;
     if (i < texto.length) {
       document.getElementById("saudacao").innerHTML += texto.charAt(i);
       i++;
-      setTimeout(digitar, 40);
+      setTimeout(digitar, 70);
     }
   }
 
