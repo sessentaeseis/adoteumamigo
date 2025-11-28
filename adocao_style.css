@@ -42,10 +42,10 @@ body {
 .ulnav li a {
     text-decoration: none;
     color: #E6E6E6;
-    padding: 10px 14px;
-    border-radius: 7px;
+    padding: 10px 12px;
+    border-radius: 2px;
     transition: 0.4s ease;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .ulnav li a:hover {
@@ -71,18 +71,21 @@ hr {
     margin: 40px auto;
 }
 
+.cardhr {
+    margin: 0px auto;
+}
 
 .container-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 35px;
     width: 80%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .card {
     background-color: #161617;
-    border-radius: 12px;
+    border-radius: 4px;
     padding: 20px;
     text-align: center;
     box-shadow: 0 3px 12px rgba(0,0,0,0.5);
@@ -97,14 +100,14 @@ hr {
 .card img {
     width: 100%;
     height: 400px;
-    border-radius: 8px;
+    border-radius: 2px;
     object-fit: cover;
     margin-bottom: 15px;
 }
 
 .card h3 {
     font-size: 26px;
-    margin-top: -5px;
+    margin-top: 15px;
     color: #F4A259;
     margin-bottom: 10px;
 }
@@ -116,10 +119,10 @@ hr {
 
 .card button {
     margin-top: 15px;
-    padding: 12px 18px;
+    padding: 12px 38px;
     background-color: #F4A259;
     border: none;
-    border-radius: 8px;
+    border-radius: 2px;
     cursor: pointer;
     color: #1b1b1b;
     font-family: 'Inter';
@@ -128,7 +131,9 @@ hr {
 }
 
 
-
+.card button:hover {
+    opacity: 0.9;
+}
 
 footer {
     margin-top: 50px;
