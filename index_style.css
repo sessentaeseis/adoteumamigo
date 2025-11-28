@@ -1,131 +1,162 @@
 body {
-    background-color: #0f1215;
+    background-color: #101112;
     color: #E6E6E6;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     padding: 0;
     margin: 0;
-}
-
-main {
-    background-image: linear-gradient(#161617, #141516);
-    padding-bottom: 20px;   
 }
 
 .navbar {
     background-image: linear-gradient(#161617, #141516);
     width: 100%;
-    height: 50px;
-    top: 0;
-    padding: 20px 0px;
-    margin: 0;
-    z-index: 10;
+    padding: 15px 0;
     position: sticky;
-    box-shadow: 1px 1px 5px 1px rgb(10, 10, 10);
-}
-
-.ulnav li img {
-    width: 55px;
-    margin-bottom: -20px;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.7);
 }
 
 .ulnav {
-    justify-content: space-around;
-    align-items: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
     margin: 0;
+    padding: 0;
 }
 
 .ulnav li {
     list-style: none;
-    
+}
+
+.ulnav li img {
+    width: 55px;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+.ulnav li img:hover {
+    opacity: 1;
 }
 
 .ulnav li a {
     text-decoration: none;
     color: #E6E6E6;
-    padding: 9px;
-    transition: 0.4s ease; 
-    border-radius: 7px;
+    padding: 10px 12px;
+    border-radius: 2px;
+    transition: 0.4s ease;
+    font-weight: 500;
 }
 
 .ulnav li a:hover {
     background-color: #F4A259;
+    color: #1b1b1b;
 }
 
 .bannerinicial {
     width: 100%;
+    height: 450px;
     display: flex;
+    align-items: center;
     position: relative;
     background-image: url("/imgs/bannerini.png");
-    background-size: 100%;
-    height: 400px;
-    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.bannerinicial::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
 }
 
 .bannerinicialtext {
-    text-align: left;
-    margin: auto auto auto 5%;
+    position: relative;
+    margin-left: 8%;
+    z-index: 10;
 }
 
 .bannerinicialtext h1 {
-    font-size: 50px;
-    text-decoration: underline;
-    background-color: #608512;
-    margin-bottom: -25px;
+    font-size: 56px;
+    border-radius: 2px;
+    background-color: #7AA321;
+    padding: 8px 20px;
 }
 
+.bannerinicialtext h3 {
+    font-size: 22px;
+    margin-top: -20px;
+    color: #E6E6E6;
+    text-shadow: 1px 1px 3px black;
+}
 
 #saudacao {
     text-align: center;
-    font-size: 40px;
+    font-size: 38px;
+    margin-top: 40px;
 }
 
 .introducao {
     display: flex;
-    margin: 40px auto;
-    gap: 50px;
+    gap: 60px;
     justify-content: center;
+    margin: 60px auto;
+    padding: 0 40px;
 }
 
 .introducao img {
-    border-radius: 4px;
-    width: 550px;
+    width: 500px;
+    border-radius: 2px;
     height: auto;
-    object-fit: cover;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.5);
 }
 
 .introducaotext {
-    width: 30%;
+    width: 40%;
+    margin-top: -20px;
 }
 
 .introducaotext h3 {
-    font-size: 40px;
-    margin-bottom: -5px;
-    margin-top: 0px;
+    font-size: 42px;
+    margin-bottom: 15px;
     color: #F4A259;
 }
 
 .introducaotext p {
     text-align: justify;
     font-size: 18px;
-    line-height: 1.6em;
-    
+    line-height: 1.7em;
 }
+
 
 hr {
+    width: 80%;
+    border: none;
+    height: 1px;
+    background-color: #2a2a2a;
+    margin: 40px auto;
 }
 
-footer a {
-    display: block;
-    text-align: center;
+footer {
+    margin-top: 50px;
+    padding-bottom: 40px;
 }
 
 footer a img {
     height: 45px;
-    margin: 10px auto -5px auto;
+    margin: 10px auto;
+    display: block;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+footer a img:hover {
+    opacity: 1;
 }
 
 footer p {
     text-align: center;
     line-height: 1.6em;
+    color: #bfbfbf;
 }

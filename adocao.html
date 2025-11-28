@@ -4,31 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adoção - Adote um Amigo</title>
+
     <link rel="stylesheet" href="adocao_style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="imgs/icon.png" type="image/x-icon">
 </head>
+
 <body>
     <header class="navbar">
         <ul class="ulnav">
             <li><a href="index.html">INÍCIO</a></li>
             <li><a href="adocao.html">ADOÇÃO</a></li>
-            <li><img src="imgs/icon.png" alt=""></li>
+            <li><img src="imgs/icon.png" alt="logo"></li>
             <li><a href="cadastro.html">CADASTRO</a></li>
             <li><a href="login.html">LOGIN</a></li>
         </ul>
     </header>
     <main>
+        <h1 class="titulo">Animais Disponíveis para Adoção</h1>
+        <hr>
+        <div class="container-cards">
+            <div class="card">
+                <img src="imgs/cachorro1.png">
+                <h3>Thor</h3>
+                <p>2 anos</p>
+                <p>SRD (Caramelo)</p>
+                <p>Macho (Castrado)</p>
+                <button onclick="adotar('Thor')">Quero Adotar!</button>
+            </div>
+            <div class="card">
+                <img src="imgs/gato1.jpg">
+                <h3>Mel</h3>
+                <p>1 ano</p>
+                <p>Gato Doméstico</p>
+                <p>Fêmea (Não-Castrada)</p>
+                <button onclick="adotar('Mel')">Quero Adotar!</button>
+            </div>
+            <div class="card">
+                <img src="imgs/cachorro2.jpg">
+                <h3>Bob</h3>
+                <p>4 anos</p>
+                <p>Labrador (Castrado)</p>
+                <button onclick="adotar('Bob')">Quero Adotar!</button>
+            </div>
+            <div class="card">
+                <img src="imgs/gato2.jpg">
+                <h3>Luna</h3>
+                <p>3 anos</p>
+                <p>Siamesa</p>
+                <p>Fêmea (Castrada)</p>
+                <button onclick="adotar('Luna')">Quero Adotar!</button>
+            </div>
+            <div class="card">
+                <img src="imgs/cachorro1.png">
+                <h3>Thor</h3>
+                <p>2 anos</p>
+                <p>SRD</p>
+                <button onclick="adotar('Thor')">Quero Adotar!</button>
+            </div>
+            <div class="card">
+                <img src="imgs/gato1.jpg">
+                <h3>Mel</h3>
+                <p>1 ano</p>
+                <p>Gato Doméstico</p>
+                <button onclick="adotar('Mel')">Quero Adotar!</button>
+            </div>
+            <div class="card">
+                <img src="imgs/cachorro2.jpg">
+                <h3>Bob</h3>
+                <p>4 anos</p>
+                <p>Labrador</p>
+                <button onclick="adotar('Bob')">Quero Adotar!</button>
+            </div>
+            <div class="card">
+                <img src="imgs/gato2.jpg">
+                <h3>Luna</h3>
+                <p>3 anos</p>
+                <p>Siamesa</p>
+                <button onclick="adotar('Luna')">Quero Adotar!</button>
+            </div>
+        </div>
         <hr>
         <footer>
-        <a href="https://github.com/sessentaeseis/adoteumamigo"><img src="imgs/github.png" alt=""></a>
-        <p>Produzido por Antonio V, Arthur W, Eduardo R, Julia H, Lucas S, Lucas V, Miguel W, Nahuel R.<br>© Todos os Direitos Reservados, 2025.</p>
-       </footer>
+            <a href="https://github.com/sessentaeseis/adoteumamigo"><img src="imgs/github.png" alt=""></a>
+            <p>Produzido por Antonio V, Arthur W, Eduardo R, Julia H, Lucas S, Lucas V, Miguel W, Nahuel R.<br>© Todos os Direitos Reservados, 2025.</p>
+        </footer>
     </main>
-    
-    
-    <script src="index_script.js"></script>
+    <script src="adocao_script.js"></script>
 </body>
 </html>
